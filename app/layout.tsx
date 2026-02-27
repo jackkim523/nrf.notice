@@ -7,12 +7,16 @@ export const metadata: Metadata = {
 };
 
 import { LanguageProvider } from '@/app/contexts/LanguageContext';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Use GA ID from environment variable, or empty string if not set yet.
+  const gaId = process.env.NEXT_PUBLIC_GA_ID || '';
+
   return (
     <html lang="ko">
       <body className="antialiased min-h-screen bg-white text-slate-900">
@@ -20,6 +24,7 @@ export default function RootLayout({
           {children}
         </LanguageProvider>
       </body>
+      {gaId && <GoogleAnalytics gaId={gaId} />}
     </html>
   );
 }
