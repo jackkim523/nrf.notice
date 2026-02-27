@@ -202,39 +202,39 @@ export default function AnnouncementSection() {
                                 <tbody className="text-center text-[#444]">
                                     <tr>
                                         <td className="border border-[#e5e5e5] py-3 px-2 font-bold bg-[#fbfbfb]">{t('인문사회연구소지원', 'Institute Support')}</td>
-                                        <td className="border border-[#e5e5e5] py-3 px-2"><span className="font-bold text-[#333]">{t('인문사회연구소지원팀:', 'Institute Team:')}</span> 042-869-0000</td>
+                                        <td className="border border-[#e5e5e5] py-3 px-2"><span className="font-bold text-[#333]">{t('인문사회연구소지원팀:', 'Institute Team:')}</span> 042-869-6132</td>
                                         <td className="border border-[#e5e5e5] py-3 px-2 text-center">
                                             <ul className="space-y-1 inline-block text-left">
-                                                <li><span className="font-bold text-[#333]">{t('인문학단:', 'Humanities Group:')}</span> 042-869-6132</li>
+                                                <li><span className="font-bold text-[#333]">{t('인문학단:', 'Humanities Group:')}</span> 042-869-6148</li>
                                                 <li><span className="font-bold text-[#333]">{t('사회과학단:', 'Social Science Group:')}</span> 042-869-6302</li>
-                                                <li><span className="font-bold text-[#333]">{t('문화융복합단:', 'Culture Convergence Group:')}</span> 042-869-6631</li>
+                                                <li><span className="font-bold text-[#333]">{t('문화융복합단:', 'Culture Group:')}</span> 042-869-6632</li>
                                             </ul>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="border border-[#e5e5e5] py-3 px-2 font-bold bg-[#fbfbfb]">{t('인문한국지원', 'HK Support')}</td>
-                                        <td className="border border-[#e5e5e5] py-3 px-2"><span className="font-bold text-[#333]">{t('인문사회연구소지원팀:', 'Institute Team:')}</span> 042-869-0000</td>
+                                        <td className="border border-[#e5e5e5] py-3 px-2"><span className="font-bold text-[#333]">{t('인문사회연구소지원팀:', 'Institute Team:')}</span> 042-869-6135</td>
                                         <td className="border border-[#e5e5e5] py-3 px-2 text-center">
                                             <ul className="space-y-1 inline-block text-left">
-                                                <li><span className="font-bold text-[#333]">{t('인문학단:', 'Humanities Group:')}</span> 042-869-6132</li>
+                                                <li><span className="font-bold text-[#333]">{t('인문학단:', 'Humanities Group:')}</span> 042-869-6147</li>
                                             </ul>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="border border-[#e5e5e5] py-3 px-2 font-bold bg-[#fbfbfb]">{t('사회과학연구지원', 'Social Science Research')}</td>
-                                        <td className="border border-[#e5e5e5] py-3 px-2"><span className="font-bold text-[#333]">{t('인문사회연구소지원팀:', 'Institute Team:')}</span> 042-869-0000</td>
+                                        <td className="border border-[#e5e5e5] py-3 px-2"><span className="font-bold text-[#333]">{t('인문사회연구소지원팀:', 'Institute Team:')}</span> 042-869-6133</td>
                                         <td className="border border-[#e5e5e5] py-3 px-2 text-center">
                                             <ul className="space-y-1 inline-block text-left">
-                                                <li><span className="font-bold text-[#333]">{t('사회과학단:', 'Social Science Group:')}</span> 042-869-6302</li>
+                                                <li><span className="font-bold text-[#333]">{t('사회과학단:', 'Social Science Group:')}</span> 042-869-6303</li>
                                             </ul>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="border border-[#e5e5e5] py-3 px-2 font-bold bg-[#fbfbfb]">{t('글로벌인문사회융합연구지원', 'Global Convergence Research')}</td>
-                                        <td className="border border-[#e5e5e5] py-3 px-2"><span className="font-bold text-[#333]">{t('인문사회연구소지원팀:', 'Institute Team:')}</span> 042-869-0000</td>
+                                        <td className="border border-[#e5e5e5] py-3 px-2"><span className="font-bold text-[#333]">{t('인문사회연구소지원팀:', 'Institute Team:')}</span> 042-869-6134</td>
                                         <td className="border border-[#e5e5e5] py-3 px-2 text-center">
                                             <ul className="space-y-1 inline-block text-left">
-                                                <li><span className="font-bold text-[#333]">{t('문화융복합단:', 'Culture Convergence Group:')}</span> 042-869-6631</li>
+                                                <li><span className="font-bold text-[#333]">{t('문화융복합단:', 'Culture Group:')}</span> 042-869-6632</li>
                                             </ul>
                                         </td>
                                     </tr>

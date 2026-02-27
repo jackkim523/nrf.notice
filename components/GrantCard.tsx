@@ -7,10 +7,15 @@ interface GrantCardProps {
 
 export default function GrantCard({ grant }: GrantCardProps) {
     const { t, language } = useLanguage();
+    // 로컬 시간대 기준 정확한 자정 달력 일자 계산 (표준시(UTC) 변환 시차 오류 방지)
     const today = new Date();
-    const deadline = new Date(grant.deadline);
+    today.setHours(0, 0, 0, 0);
+
+    const [year, month, day] = grant.deadline.split('-').map(Number);
+    const deadline = new Date(year, month - 1, day);
+
     const diffTime = deadline.getTime() - today.getTime();
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
 
     const isUrgent = diffDays <= 7 && diffDays >= 0;
 
@@ -52,7 +57,6 @@ export default function GrantCard({ grant }: GrantCardProps) {
                         </span>
                     </div>
                 </div>
-
                 {/* Bookmark/Heart Icon */}
                 <button
                     onClick={(e) => {
@@ -97,21 +101,27 @@ export default function GrantCard({ grant }: GrantCardProps) {
                 {/* Action Buttons */}
                 <div className="flex gap-2 shrink-0">
                     <a
-                        href="https://www.nrf.re.kr/"
+                        href={grant.url || "https://www.nrf.re.kr/"}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-slate-600 border border-slate-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-slate-700 transition-colors shadow-sm text-center flex items-center justify-center"
                     >
                         {t('공고 바로가기(NRF)', 'View Notice (NRF)')}
                     </a>
-                    <button
-                        onClick={(e) => e.preventDefault()}
-                        className="bg-amber-50 border border-amber-200 text-amber-700 px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-amber-100 hover:border-amber-300 transition-colors shadow-sm text-center flex items-center justify-center"
-                    >
-                        {t('신청 매뉴얼', 'User Manual')}
-                    </button>
+                    <div className="relative inline-block">
+                        <span className="absolute -top-3 left-1/2 -translate-x-1/2 text-blue-600 bg-transparent text-[11px] font-extrabold px-1.5 py-0.5 drop-shadow-sm animate-bounce z-10 pointer-events-none tracking-widest">
+                            Soon
+                        </span>
+                        <button
+                            onClick={(e) => e.preventDefault()}
+                            className="bg-amber-50 border border-amber-200 text-amber-700 px-3 py-1.5 rounded-lg text-xs font-bold transition-colors shadow-sm text-center flex items-center justify-center w-full h-full cursor-not-allowed opacity-80"
+                            disabled
+                        >
+                            {t('신청 매뉴얼', 'User Manual')}
+                        </button>
+                    </div>
                     <a
-                        href="https://ernd.nrf.re.kr/"
+                        href={grant.erndUrl || "https://ernd.nrf.re.kr/"}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-emerald-50 border border-emerald-200 text-emerald-700 px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-emerald-100 hover:border-emerald-300 transition-colors shadow-sm text-center flex items-center justify-center"

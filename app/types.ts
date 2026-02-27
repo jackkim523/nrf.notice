@@ -14,6 +14,9 @@ export interface Grant {
     fieldsEn?: string[];
     status: 'active' | 'closed' | 'upcoming';
     url?: string;
+    erndUrl?: string;
+    businessContact?: string;
+    evaluationContact?: string;
 }
 
 export type FilterState = {
