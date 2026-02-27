@@ -14,8 +14,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Use GA ID from environment variable, or empty string if not set yet.
-  const gaId = process.env.NEXT_PUBLIC_GA_ID || '';
+  // Use GA ID directly
+  const gaId = 'G-RYSPLEL0WP';
 
   return (
     <html lang="ko">
