@@ -121,7 +121,7 @@ export default function AnnouncementSection() {
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td className="border border-[#e5e5e5] py-3 px-2 font-bold bg-[#fbfbfb] whitespace-nowrap">{t('인문한국지원', 'HK Support')}</td>
+                                        <td className="border border-[#e5e5e5] py-3 px-2 font-bold bg-[#fbfbfb] whitespace-nowrap">{t('인문학 진흥', 'Humanities Promotion')}</td>
                                         <td className="border border-[#e5e5e5] py-3 px-2 font-bold whitespace-nowrap">{t('인문한국3.0지원사업', 'HK 3.0 Support')}</td>
                                     </tr>
                                 </tbody>
