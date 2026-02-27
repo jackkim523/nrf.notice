@@ -122,7 +122,7 @@ export default function AnnouncementSection() {
                                     </tr>
                                     <tr>
                                         <td className="border border-[#e5e5e5] py-3 px-2 font-bold bg-[#fbfbfb] whitespace-nowrap">{t('인문한국지원', 'HK Support')}</td>
-                                        <td className="border border-[#e5e5e5] py-3 px-2 font-bold whitespace-nowrap">{t('인문한국지원', 'HK Support')}</td>
+                                        <td className="border border-[#e5e5e5] py-3 px-2 font-bold whitespace-nowrap text-blue-700">{t('인문한국3.0지원사업', 'HK 3.0 Support')}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -151,7 +151,7 @@ export default function AnnouncementSection() {
                                         <td className="border border-[#e5e5e5] py-3 px-2 text-left whitespace-nowrap">{t('2026년도 신규과제 신청 공고', 'Announcement of New Project Call')}</td>
                                     </tr>
                                     <tr>
-                                        <td className="border border-[#e5e5e5] py-3 px-2 font-bold bg-[#fbfbfb] whitespace-nowrap">{t('2026년 4월', 'Apr 2026')}</td>
+                                        <td className="border border-[#e5e5e5] py-3 px-2 font-bold bg-[#fbfbfb] whitespace-nowrap">{t('2026년 3월 ~ 4월', 'Mar ~ Apr 2026')}</td>
                                         <td className="border border-[#e5e5e5] py-3 px-2 text-left whitespace-nowrap">{t('2026년도 신규과제 신청 접수', 'Application Registration')}</td>
                                     </tr>
                                     <tr>

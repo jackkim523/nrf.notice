@@ -184,10 +184,10 @@ export const businessTableData: BusinessRow[] = [
         budgetEn: "2B Won",
         budgetNote: "이내",
         budgetNoteEn: "Max",
-        period: "6년",
-        periodEn: "6 Years",
-        periodNote: "(3+3)",
-        periodNoteEn: "(3+3)"
+        period: "5년",
+        periodEn: "5 Years",
+        periodNote: "(3+2)",
+        periodNoteEn: "(3+2)"
     },
 
     // --- 사회과학연구지원 (Social Science) ---
@@ -239,7 +239,7 @@ export const businessTableData: BusinessRow[] = [
         category: "인문한국지원",
         categoryEn: "Humanities Korea\n(HK+)",
         categoryRowSpan: 2,
-        subCategory: "인문한국지원",
+        subCategory: "인문한국3.0지원사업",
         subCategoryEn: "HK 3.0 Support",
         subCategoryRowSpan: 2,
         type: "연구거점형",
