@@ -1,0 +1,16 @@
+name: ZAP Penetration Test
+
+on:
+  schedule:
+    - cron: '30 0 * * *' # 00:30 UTC = 9:30 AM KST
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: Scan live environment
+    steps:
+      - name: ZAP Baseline Scan
+        uses: zaproxy/action-baseline@v0.14.0
+        with:
+          target: 'https://nrf-notice.vercel.app'
+          fail_action: false
