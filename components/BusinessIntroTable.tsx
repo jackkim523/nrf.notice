@@ -10,14 +10,14 @@ export default function BusinessIntroTable() {
             <table className="w-full text-sm border-collapse border-b border-[#ccc]">
                 <thead className="bg-[#f7f7f7] text-[#333] font-bold text-center">
                     <tr>
-                        <th className="border border-[#e5e5e5] py-3 px-2 w-20 break-keep">{t('사업명', 'Program')}</th>
-                        <th className="border border-[#e5e5e5] py-3 px-2 w-24 break-keep">{t('세부사업 및 유형', 'Details & Type')}</th>
-                        <th className="border border-[#e5e5e5] py-3 px-2 w-24 break-keep">{t('유형', 'Type')}</th>
-                        <th className="border border-[#e5e5e5] py-3 px-2 w-[24%] break-keep">{t('사업목적', 'Purpose')}</th>
-                        <th className="border border-[#e5e5e5] py-3 px-2 w-36 break-keep">{t('지원대상', 'Target')}</th>
-                        <th className="border border-[#e5e5e5] py-3 px-2 w-24 break-keep">{t('과제수', 'Grants')}<br />{t('(신규)', '(New)')}</th>
-                        <th className="border border-[#e5e5e5] py-3 px-2 w-24 break-keep">{t('지원규모', 'Budget')}<br />{t('(과제당/연)', '(Per Year)')}</th>
-                        <th className="border border-[#e5e5e5] py-3 px-2 w-20 break-keep">{t('지원기간', 'Duration')}</th>
+                        <th className="border border-[#e5e5e5] py-3 px-2 w-[12%] break-keep">{t('사업명', 'Program')}</th>
+                        <th className="border border-[#e5e5e5] py-3 px-2 w-[14%] break-keep">{t('세부사업 및 유형', 'Details & Type')}</th>
+                        <th className="border border-[#e5e5e5] py-3 px-2 w-[12%] break-keep">{t('유형', 'Type')}</th>
+                        <th className="border border-[#e5e5e5] py-3 px-2 w-[18%] break-keep">{t('사업목적', 'Purpose')}</th>
+                        <th className="border border-[#e5e5e5] py-3 px-2 w-[16%] break-keep">{t('지원대상', 'Target')}</th>
+                        <th className="border border-[#e5e5e5] py-3 px-2 w-[10%] break-keep">{t('과제수', 'Grants')}<br />{t('(신규)', '(New)')}</th>
+                        <th className="border border-[#e5e5e5] py-3 px-2 w-[10%] break-keep">{t('지원규모', 'Budget')}<br />{t('(과제당/연)', '(Per Year)')}</th>
+                        <th className="border border-[#e5e5e5] py-3 px-2 w-[8%] break-keep">{t('지원기간', 'Duration')}</th>
                     </tr>
                 </thead>
                 <tbody className="text-slate-700 text-center text-xs md:text-sm">
